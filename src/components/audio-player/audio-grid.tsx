@@ -13,7 +13,7 @@ export function AudioGrid() {
     if (tracks.length === 0) {
       audioTracks.forEach((track) => initTrack(track));
     }
-  }, []);
+  }, [initTrack, tracks]);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
